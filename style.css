@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    /*Primary colors*/
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /*Neutral color*/
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+}
+
+body {
+    background-color: var(--very-dark-blue-main);
+    font-family: 'Outfit', sans-serif;
+    margin: auto;
+    min-width: 375px;
+    max-width: 450px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    min-height: 100vh;
+}
+.container {
+    background-color: var(--very-dark-blue-card);
+    border-radius: 20px;
+    min-height: 700px;
+}
+.equilibrium {
+    display: flex;
+    justify-content: center;
+}
+.equilibrium img {
+    position: relative;
+    width: 400px;
+    border-radius: 15px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+.content {
+    margin: 10px 25px;
+}
+.content h1 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+.content p {
+    color: var(--soft-blue);
+    font-size: 1.4em;
+    font-weight: 100;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.info1 {
+    display: flex;
+    align-items: center;
+}
+.info1 p {
+    margin-left: 10px;
+    color: var(--cyan);
+}
+.info2 {
+    display: flex;
+    align-items: center;
+}
+.info2 p {
+    margin-left: 10px;
+    color: var(--soft-blue);
+}
+.user {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.user p {
+    margin-left: 20px;
+}
+.user span {
+    color: #fff;
+}
+.avatar {
+    width: 15%;
+    border: 1px 50% #fff; /*acertar para círculo*/
+}
+
+.container hr {
+    color: var(--soft-blue);
+    width: 100%;
+    height: 1px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width:452px) {
+    .equilibrium img {
+       max-width: 90%;
+       margin: 15px 10px;
+    }
+    .container {
+        max-height: 500px; 
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    .content p {
+        margin-top: 40px;
+    }
+    .info {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .info1 p {
+        font-size: 18px;
+        margin-top: -1px;
+    }
+    .info2 p {
+        font-size: 18px;
+        margin-top: -1px;
+    }
+    .user {
+        margin-top: 30px;
+    }
+    .user p {
+        margin-top: -2px;
+    }
+}
+
+
